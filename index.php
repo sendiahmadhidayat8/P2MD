@@ -10,7 +10,7 @@
     <div id="sensor-data">
         <!-- Data sensor akan ditampilkan di sini -->
         <span id="suhu"></span>
-        <span id="kelembapan"></span>
+        <span id="kelembaban"></span>
         <span id="kecepatanangin"></span>
     </div>
 
@@ -20,7 +20,7 @@ function appendData(data) {
     const sensorDataDiv = document.getElementById("sensor-data");
     sensorDataDiv.innerHTML = `
         ${data.suhu}
-        ${data.kelembapan}
+        ${data.kelembaban}
         ${data.kecepatanangin}
     `;
 }

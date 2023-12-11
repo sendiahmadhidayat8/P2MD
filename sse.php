@@ -35,13 +35,13 @@ function performHttpGetRequest($url, $headers) {
 
 // Header yang diperlukan (sesuaikan dengan kebutuhan Anda)
 $headers = array(
-    "X-M2M-Origin: 039a2ba9d88afee6:8351257502e4cae8",
+    "X-M2M-Origin: 78c480b24e968e58:3a60980e911b3e9c",
     "Content-Type: application/json;ty=4",
     "Accept: application/json"
 );
 
 // URL target untuk GET (sesuaikan dengan URL API Anda)
-$apiUrl = "https://platform.antares.id:8443/~/antares-cse/antares-id/cobaasu/sensor/la";
+$apiUrl = "https://platform.antares.id:8443/~/antares-cse/antares-id/smart_maggot/monitor/la";
 
 // JavaScript untuk mengatur opsi caching di sisi klien
 echo "<script>";

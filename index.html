@@ -6,7 +6,7 @@
 		<!-- Basic Page Needs -->
 		<meta charset="UTF-8">
 		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
-		<title>One Admin</title>
+		<title>P2MD</title>
 
 		<meta name="author" content="themsflat.com">
 
@@ -42,61 +42,14 @@
 				<div class="curren-menu info-left">
 					<div class="logo">
 						<a href="index.html" title="">
-							<img src="images/logo.png" alt="One Admin">
+							<img src="images/tel.png" alt="One Admin">
 						</a>
 					</div><!-- /.logo -->
 					<div class="top-button">
 						<span></span>
 					</div><!-- /.top-button -->
 				</div><!-- /.curren-menu -->
-				<ul class="info-right">
-					<li class="setting">
-						<a href="#" class="waves-effect waves-teal" title="">
-							<img src="images/icon/setting.png" alt="">
-						</a>
-					</li><!-- /.setting -->
-					<li class="notification">
-						<a href="#" class="waves-effect waves-teal" title="">
-							7
-						</a>
-					</li><!-- /.notification -->
-					<li class="user">
-						<div class="avatar">
-							<img src="images/avatar/01.png" alt="">
-						</div>
-						<div class="info">
-							<p class="name">STUARD ALEX</p>
-							<p class="address">San Fransico, CA</p>
-						</div>
-						<div class="arrow-down">
-							<i class="fa fa-angle-down" aria-hidden="true"></i>
-							<i class="fa fa-angle-up" aria-hidden="true"></i>
-						</div>
-						<div class="dropdown-menu">
-							<ul>
-								<li>
-									<div class="avatar">
-										<img src="images/avatar/01.png" alt="">
-									</div>
-									<div class="profile">
-										<a href="#" title="">View Profile</a>
-									</div>
-									<div class="clearfix"></div>
-								</li>
-								<li>
-									<a href="#" class="waves-effect" title="">My Account</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect" title="">Setting</a>
-								</li>
-								<li>
-									<a href="#" class="waves-effect" title="">Logout</a>
-								</li>
-							</ul>
-						</div><!-- /.dropdown-menu -->
-						<div class="clearfix"></div>
-					</li><!-- /.user -->
-				</ul><!-- /.info-right -->
+				
 				<div class="clearfix"></div>
 			</div>	<!-- /.navbar-top -->
 		</header><!-- /header <-->
@@ -139,7 +92,7 @@
 									<img src="images/icon/kelembapan.png" alt="">
 								</div>
 								<div class="content">
-									<div class="numb" id="sensor-kelembapan" data-from="0" data-to="59" data-speed="1000" data-waypoint-active="yes">....</div>
+									<div class="numb" id="sensor-kelembaban" data-from="0" data-to="59" data-speed="1000" data-waypoint-active="yes">....</div>
 									<div class="text">
 										KELEMBAPAN
 									</div>
@@ -150,9 +103,9 @@
 									<img src="images/icon/tick.png" alt="">
 								</div>
 								<div class="content">
-									<div class="numb" id="sensor-kecepatanangin" data-from="0" data-to="87" data-speed="1000" data-waypoint-active="yes">....</div>
+									<div class="numb" id="sensor-blower" data-from="0" data-to="87" data-speed="1000" data-waypoint-active="yes">....</div>
 									<div class="text">
-										KECEPATAN ANGIN
+										BLOWER
 									</div>
 								</div>
 							</li><!-- /.progres -->
@@ -161,9 +114,9 @@
 									<img src="images/icon/chart.png" alt="">
 								</div>
 								<div class="content">
-									<div class="numb" data-from="0" data-to="43" data-speed="1000" data-waypoint-active="yes">NULL</div>
+									<div class="numb" id="sensor-lammpu" data-from="0" data-to="43" data-speed="1000" data-waypoint-active="yes">....</div>
 									<div class="text">
-										NULL
+										LAMPU
 									</div>
 								</div>
 							</li><!-- /.progres -->
@@ -180,13 +133,17 @@
 				sensorsuhu.innerHTML = `
 					${data.suhu}C°
 				`;
-				const sensorkelembapan = document.getElementById("sensor-kelembapan");
-				sensorkelembapan.innerHTML = `
-					${data.kelembapan}
+				const sensorkelembaban = document.getElementById("sensor-kelembaban");
+				sensorkelembaban.innerHTML = `
+					${data.kelembaban}
 				`;
-				const sensorkecepatanangin = document.getElementById("sensor-kecepatanangin");
-				sensorkecepatanangin.innerHTML = `
-					${data.kecepatanangin}
+				const sensorblower = document.getElementById("sensor-blower");
+				sensorblower.innerHTML = `
+					${data.blower}
+				`;
+				const sensorlammpu = document.getElementById("sensor-lammpu");
+				sensorlammpu.innerHTML = `
+					${data.lammpu}
 				`;
 			}
 			
